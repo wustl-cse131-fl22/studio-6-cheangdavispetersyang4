@@ -27,6 +27,8 @@ public class IterativeMethods {
 	 */
 	public static int gcd(int p, int q) {
 		while (q != 0) {
+			//if q does not equal 0,then q becomes the remainder between p and q. p becomes q
+			//when q is equal to 0, the biggest common divisor is found
 			int temp = q;
 			q = p % q;
 			p = temp;
